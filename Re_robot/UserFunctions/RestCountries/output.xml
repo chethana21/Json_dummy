@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.11 on win32)" generated="20231120 15:14:23.715" rpa="false" schemaversion="4">
+<suite id="s1" name="Restcountry" source="C:\Users\Administrator\OneDrive - Wipro\Fujitsu\Re_robot\UserFunctions\RestCountries\restcountry.robot">
+<test id="s1-t1" name="Check Compare Common Name Count with JSON" line="93">
+<kw name="Compare Common Name Count with JSON Result">
+<var>${result}</var>
+<arg>${api_url}</arg>
+<kw name="Compare Common Name Count With Json" library="RestCountriesDataDriver">
+<var>${result}</var>
+<msg timestamp="20231120 15:14:32.379" level="INFO">Total number of countries in Json data and in API count are matching</msg>
+<msg timestamp="20231120 15:14:32.379" level="INFO">${result} = True</msg>
+<status status="PASS" starttime="20231120 15:14:23.919" endtime="20231120 15:14:32.379"/>
+</kw>
+<msg timestamp="20231120 15:14:32.379" level="INFO">${result} = True</msg>
+<status status="PASS" starttime="20231120 15:14:23.919" endtime="20231120 15:14:32.379"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${result}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20231120 15:14:32.381" endtime="20231120 15:14:32.381"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>The result is: ${result}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231120 15:14:32.382" level="INFO">The result is: True</msg>
+<status status="PASS" starttime="20231120 15:14:32.381" endtime="20231120 15:14:32.382"/>
+</kw>
+<doc>Verify if compare_common_name_count_with_json returns True</doc>
+<status status="PASS" starttime="20231120 15:14:23.918" endtime="20231120 15:14:32.382"/>
+</test>
+<status status="PASS" starttime="20231120 15:14:23.718" endtime="20231120 15:14:32.382"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Restcountry">Restcountry</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

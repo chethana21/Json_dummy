@@ -1,0 +1,10 @@
+{
+  "Person": {
+    "ID": 1,
+    "NAME": "Chethana",
+    "Office": {
+      "ROLE": "Project Engineer",
+      "Location": "CDC2"
+    }
+  }
+}

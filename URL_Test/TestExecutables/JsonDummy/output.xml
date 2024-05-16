@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.11 on win32)" generated="20231124 15:22:06.882" rpa="false" schemaversion="4">
+<suite id="s1" name="Jsondummy" source="C:\Users\Administrator\OneDrive - Wipro\Fujitsu\URL_Test\TestExecutables\JsonDummy\jsondummy.robot">
+<test id="s1-t1" name="Check compare created data in cart" line="24">
+<kw name="Compare Created Data In Cart" library="JsondummyDataDriver">
+<var>${result}</var>
+<arg>Realme</arg>
+<arg>2</arg>
+<msg timestamp="20231124 15:22:11.074" level="ERROR">AssertionError: Response status code is not 201 (Created).</msg>
+<msg timestamp="20231124 15:22:11.075" level="INFO">&lt;Response [400]&gt; {"message":"User id is required"} &lt;bound method Response.json of &lt;Response [400]&gt;&gt;
+POST request error: 400 Client Error: Bad Request for url: https://dummyjson.com/carts/add</msg>
+<msg timestamp="20231124 15:22:11.075" level="INFO">${result} = False</msg>
+<status status="PASS" starttime="20231124 15:22:07.124" endtime="20231124 15:22:11.075"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${result}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<msg timestamp="20231124 15:22:11.075" level="FAIL">'False' should be true.</msg>
+<status status="FAIL" starttime="20231124 15:22:11.075" endtime="20231124 15:22:11.076"/>
+</kw>
+<doc>Verify if compare created data in cart returns True</doc>
+<status status="FAIL" starttime="20231124 15:22:07.123" endtime="20231124 15:22:11.076">'False' should be true.</status>
+</test>
+<status status="FAIL" starttime="20231124 15:22:06.888" endtime="20231124 15:22:11.077"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Jsondummy">Jsondummy</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231124 15:22:11.074" level="ERROR">AssertionError: Response status code is not 201 (Created).</msg>
+</errors>
+</robot>

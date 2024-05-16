@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.11 on win32)" generated="20231122 15:45:48.979" rpa="false" schemaversion="4">
+<suite id="s1" name="Usermanagement" source="C:\Users\Administrator\OneDrive - Wipro\Fujitsu\URL_Test\TestExecutables\UserDetails\usermanagement.robot">
+<test id="s1-t1" name="Check Compare User Count with json" line="5">
+<kw name="Compare User Count With Json" library="UserDetailsDataDriver">
+<var>${a}</var>
+<msg timestamp="20231122 15:45:50.306" level="INFO">Total Number of Users and User data are matching, API count 12, JSON count 12</msg>
+<msg timestamp="20231122 15:45:50.306" level="INFO">${a} = True</msg>
+<status status="PASS" starttime="20231122 15:45:49.438" endtime="20231122 15:45:50.307"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${a}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20231122 15:45:50.309" endtime="20231122 15:45:50.310"/>
+</kw>
+<doc>Verify if compare_user_count_with_json</doc>
+<status status="PASS" starttime="20231122 15:45:49.437" endtime="20231122 15:45:50.311"/>
+</test>
+<test id="s1-t2" name="Check Compare User data with id" line="10">
+<kw name="Compare User Data With Id" library="UserDetailsDataDriver">
+<var>${a}</var>
+<arg>4</arg>
+<msg timestamp="20231122 15:45:51.288" level="INFO">There is no mismatch on the User data given by User Id 4 this is following data of JSON {'data': {'id': 4, 'email': 'eve.holt@reqres.in', 'first_name': 'Eve', 'last_name': 'Holt', 'avatar': 'https://reqres.in/img/faces/4-image.jpg'}, 'support': {'url': 'https://reqres.in/#support-heading', 'text': 'To keep ReqRes free, contributions towards server costs are appreciated!'}} and the data of API is {'data': {'id': 4, 'email': 'eve.holt@reqres.in', 'first_name': 'Eve', 'last_name': 'Holt', 'avatar': 'https://reqres.in/img/faces/4-image.jpg'}, 'support': {'url': 'https://reqres.in/#support-heading', 'text': 'To keep ReqRes free, contributions towards server costs are appreciated!'}}</msg>
+<msg timestamp="20231122 15:45:51.288" level="INFO">${a} = True</msg>
+<status status="PASS" starttime="20231122 15:45:50.316" endtime="20231122 15:45:51.289"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${a}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20231122 15:45:51.290" endtime="20231122 15:45:51.291"/>
+</kw>
+<kw name="Compare User Data With Id" library="UserDetailsDataDriver">
+<var>${b}</var>
+<arg>12</arg>
+<msg timestamp="20231122 15:45:52.089" level="INFO">There is no mismatch on the User data given by User Id 12 this is following data of JSON {'data': {'id': 12, 'email': 'rachel.howell@reqres.in', 'first_name': 'Rachel', 'last_name': 'Howell', 'avatar': 'https://reqres.in/img/faces/12-image.jpg'}, 'support': {'url': 'https://reqres.in/#support-heading', 'text': 'To keep ReqRes free, contributions towards server costs are appreciated!'}} and the data of API is {'data': {'id': 12, 'email': 'rachel.howell@reqres.in', 'first_name': 'Rachel', 'last_name': 'Howell', 'avatar': 'https://reqres.in/img/faces/12-image.jpg'}, 'support': {'url': 'https://reqres.in/#support-heading', 'text': 'To keep ReqRes free, contributions towards server costs are appreciated!'}}</msg>
+<msg timestamp="20231122 15:45:52.089" level="INFO">${b} = True</msg>
+<status status="PASS" starttime="20231122 15:45:51.291" endtime="20231122 15:45:52.089"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${b}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20231122 15:45:52.090" endtime="20231122 15:45:52.091"/>
+</kw>
+<doc>Verify if compare_user_data_with_id</doc>
+<status status="PASS" starttime="20231122 15:45:50.315" endtime="20231122 15:45:52.092"/>
+</test>
+<test id="s1-t3" name="Check Compare User data with email" line="18">
+<kw name="Compare User Data With Email" library="UserDetailsDataDriver">
+<var>${a}</var>
+<arg>charles.morris@reqres.in</arg>
+<msg timestamp="20231122 15:45:52.839" level="INFO">There is no mismatch on the User data given by Email Id of charles.morris@reqres.in this is following data of JSON {'id': 5, 'first_name': 'Charles', 'last_name': 'Morris'} and the data of API is {'id': 5, 'first_name': 'Charles', 'last_name': 'Morris'}</msg>
+<msg timestamp="20231122 15:45:52.839" level="INFO">${a} = True</msg>
+<status status="PASS" starttime="20231122 15:45:52.095" endtime="20231122 15:45:52.839"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${a}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20231122 15:45:52.842" endtime="20231122 15:45:52.843"/>
+</kw>
+<kw name="Compare User Data With Email" library="UserDetailsDataDriver">
+<var>${b}</var>
+<arg>george.edwards@reqres.in</arg>
+<msg timestamp="20231122 15:45:53.626" level="INFO">There is no mismatch on the User data given by Email Id of george.edwards@reqres.in this is following data of JSON {'id': 11, 'first_name': 'George', 'last_name': 'Edwards'} and the data of API is {'id': 11, 'first_name': 'George', 'last_name': 'Edwards'}</msg>
+<msg timestamp="20231122 15:45:53.627" level="INFO">${b} = True</msg>
+<status status="PASS" starttime="20231122 15:45:52.845" endtime="20231122 15:45:53.627"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${b}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20231122 15:45:53.629" endtime="20231122 15:45:53.629"/>
+</kw>
+<doc>Verify if compare_user_data_with_email</doc>
+<status status="PASS" starttime="20231122 15:45:52.093" endtime="20231122 15:45:53.631"/>
+</test>
+<test id="s1-t4" name="Check Compare Create User data" line="26">
+<kw name="Compare Create User Data" library="UserDetailsDataDriver">
+<var>${a}</var>
+<arg>Chinnu</arg>
+<arg>H/W Engineer</arg>
+<msg timestamp="20231122 15:45:54.378" level="ERROR">AssertionError: Name does not match: None and Chethana</msg>
+<msg timestamp="20231122 15:45:54.380" level="INFO">&lt;Response [201]&gt; {"id":"933","createdAt":"2023-11-22T10:15:56.628Z"} &lt;bound method Response.json of &lt;Response [201]&gt;&gt;
+{'id': '933', 'createdAt': '2023-11-22T10:15:56.628Z'}</msg>
+<msg timestamp="20231122 15:45:54.380" level="INFO">${a} = False</msg>
+<status status="PASS" starttime="20231122 15:45:53.635" endtime="20231122 15:45:54.380"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${a}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<msg timestamp="20231122 15:45:54.382" level="FAIL">'False' should be true.</msg>
+<status status="FAIL" starttime="20231122 15:45:54.381" endtime="20231122 15:45:54.382"/>
+</kw>
+<doc>Verify if compare_create_user_data</doc>
+<status status="FAIL" starttime="20231122 15:45:53.633" endtime="20231122 15:45:54.385">'False' should be true.</status>
+</test>
+<test id="s1-t5" name="Check Compare Update User data" line="31">
+<kw name="Compare Update User Data" library="UserDetailsDataDriver">
+<var>${a}</var>
+<arg>4</arg>
+<arg>Chowdry</arg>
+<arg>Software Engineer</arg>
+<msg timestamp="20231122 15:45:54.806" level="FAIL">TypeError: 'Logger' object is not callable</msg>
+<status status="FAIL" starttime="20231122 15:45:54.388" endtime="20231122 15:45:54.807"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${a}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="NOT RUN" starttime="20231122 15:45:54.809" endtime="20231122 15:45:54.810"/>
+</kw>
+<doc>Verify if compare_update_user_data</doc>
+<status status="FAIL" starttime="20231122 15:45:54.387" endtime="20231122 15:45:54.810">TypeError: 'Logger' object is not callable</status>
+</test>
+<test id="s1-t6" name="Check Compare Delete User data" line="36">
+<kw name="Compare Delete User Data" library="UserDetailsDataDriver">
+<var>${a}</var>
+<arg>4</arg>
+<msg timestamp="20231122 15:45:55.890" level="INFO">Deleted user data from API the ID is 4 and the status True</msg>
+<msg timestamp="20231122 15:45:56.311" level="INFO">${a} = False</msg>
+<status status="PASS" starttime="20231122 15:45:54.813" endtime="20231122 15:45:56.311"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${a}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<msg timestamp="20231122 15:45:56.313" level="FAIL">'False' should be true.</msg>
+<status status="FAIL" starttime="20231122 15:45:56.312" endtime="20231122 15:45:56.313"/>
+</kw>
+<doc>Verify if compare_delete_user_data</doc>
+<status status="FAIL" starttime="20231122 15:45:54.812" endtime="20231122 15:45:56.314">'False' should be true.</status>
+</test>
+<status status="FAIL" starttime="20231122 15:45:48.988" endtime="20231122 15:45:56.316"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="3" skip="0" id="s1" name="Usermanagement">Usermanagement</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231122 15:45:54.378" level="ERROR">AssertionError: Name does not match: None and Chethana</msg>
+</errors>
+</robot>

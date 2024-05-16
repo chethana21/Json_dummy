@@ -1,0 +1,95 @@
+
+
+{
+
+        "name": {
+    
+          "common": "Latvia",
+    
+          "official": "Republic of Latvia",
+    
+          "nativeName": {
+    
+            "lav": {
+    
+              "official": "Latvijas Republikas",
+    
+              "common": "Latvija"
+    
+            }
+    
+          }
+    
+        },
+    
+        "tld": [
+    
+          ".lv"
+    
+        ],
+    
+        "cca2": "LV",
+    
+        "ccn3": "428",
+    
+        "cca3": "LVA",
+    
+        "cioc": "LAT",
+    
+        "independent": true,
+    
+        "status": "officially-assigned",
+    
+        "unMember": true,
+    
+        "currencies": {
+    
+          "EUR": {
+    
+            "name": "Euro",
+    
+            "symbol": "€"
+    
+          }
+    
+        },
+    
+        "idd": {
+    
+          "root": "+3",
+    
+          "suffixes": [
+    
+            "71"
+    
+          ]
+    
+        },
+    
+        "capital": [
+    
+          "Riga"
+    
+        ],
+    
+        "altSpellings": [
+    
+          "LV",
+    
+          "Republic of Latvia",
+    
+          "Latvijas Republika"
+    
+        ],
+    
+        "region": "Europe",
+    
+        "subregion": "Northern Europe",
+    
+        "languages": {
+    
+          "lav": "Latvian"
+    
+        }
+    
+}

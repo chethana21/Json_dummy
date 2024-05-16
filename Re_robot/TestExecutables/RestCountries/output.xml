@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.11 on win32)" generated="20231120 15:31:39.382" rpa="false" schemaversion="4">
+<suite id="s1" name="Restcountry" source="C:\Users\Administrator\OneDrive - Wipro\Fujitsu\Re_robot\TestExecutables\RestCountries\restcountry.robot">
+<test id="s1-t1" name="Check Compare Common Name Count with JSON" line="112">
+<kw name="Compare Common Name Count With Json" library="RestCountriesDataDriver">
+<var>${result}</var>
+<msg timestamp="20231120 15:31:41.262" level="INFO">Total number of countries in Json data and in API count are matching</msg>
+<msg timestamp="20231120 15:31:41.262" level="INFO">${result} = True</msg>
+<status status="PASS" starttime="20231120 15:31:39.661" endtime="20231120 15:31:41.262"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${result}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20231120 15:31:41.265" endtime="20231120 15:31:41.265"/>
+</kw>
+<doc>Verify if compare_common_name_count_with_json returns True</doc>
+<status status="PASS" starttime="20231120 15:31:39.660" endtime="20231120 15:31:41.265"/>
+</test>
+<status status="PASS" starttime="20231120 15:31:39.384" endtime="20231120 15:31:41.265"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Restcountry">Restcountry</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

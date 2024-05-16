@@ -1,0 +1,37 @@
+{
+    
+    "Total countries" : 250,
+
+    
+    "Countries by region": {
+        
+        "Oceania": ["American Samoa", "Christmas Island", "Samoa", "Cook Islands", "Kiribati", "Fiji", "Pitcairn Islands", "Tonga", "Papua New Guinea", "Cocos (Keeling) Islands", "Guam", "Palau", "French Polynesia", "Marshall Islands", "Australia", "Micronesia", "Norfolk Island", "Solomon Islands", "Tuvalu", "New Caledonia", "Tokelau", "Nauru", "Wallis and Futuna", "Northern Mariana Islands", "Niue", "New Zealand", "Vanuatu"] ,
+        "Asia": ["Pakistan", "Kazakhstan", "Hong Kong", "United Arab Emirates", "Azerbaijan", "South Korea", "Laos", "Lebanon", "Macau", "Kuwait", "Oman", "Bhutan", "Bahrain", "Mongolia", "China", "Jordan", "Cambodia", "Thailand", "Turkmenistan", "Maldives", "Philippines", "Timor-Leste", "Japan", "Georgia", "Syria", "Bangladesh", "Vietnam", "Sri Lanka", "Taiwan", "Tajikistan", "Armenia", "Afghanistan", "Kyrgyzstan", "Qatar", "Yemen", "Brunei", "Uzbekistan", "Iran", "Israel", "North Korea", "Turkey", "Iraq", "Singapore", "Myanmar", "Nepal", "India", "Malaysia", "Indonesia", "Saudi Arabia", "Palestine"]
+    
+    },
+        "Countries by Sub-region":{
+      
+        "Central America": ["Panama", "Belize", "Nicaragua", "Costa Rica", "Honduras", "El Salvador", "Guatemala"],
+      
+        "Micronesia" :["Marshall Islands", "Northern Mariana Islands", "Micronesia", "Guam", "Palau", "Kiribati", "Nauru"]
+   
+    },
+  
+    "Unique Common Name by region" : {
+    
+        "region":  ["Africa", "Americas", "Antarctic", "Asia", "Europe", "Oceania"]},
+      
+      "Unique Common Name by Subregion":{
+      
+        "subregion":["Australia and New Zealand", "Caribbean", "Central America", "Central Asia", "Central Europe", "Eastern Africa", "Eastern Asia", "Eastern Europe", "Melanesia", "Micronesia", "Middle Africa", "North America", "Northern Africa", "Northern Europe", "Polynesia", "South America", "South-Eastern Asia", "Southeast Europe", "Southern Africa", "Southern Asia", "Southern Europe", "Western Africa", "Western Asia", "Western Europe"]
+    
+    },
+"Get Country Capital": {
+    "Palestine": ["Ramallah", "Jerusalem"],
+    "Lebanon": ["Beirut"],
+    "North Macedoni": ["Skopje"]
+
+}
+
+}
+

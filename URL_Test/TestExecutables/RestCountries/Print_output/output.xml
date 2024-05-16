@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.11 on win32)" generated="20231121 16:42:52.378" rpa="false" schemaversion="4">
+<suite id="s1" name="Restcountry" source="C:\Users\Administrator\OneDrive - Wipro\Fujitsu\URL_Test\TestExecutables\RestCountries\restcountry.robot">
+<test id="s1-t1" name="Check Compare Common Name Count with JSON" line="6">
+<kw name="Compare Common Name Count With Json" library="RestCountriesDataDriver">
+<var>${result}</var>
+<msg timestamp="20231121 16:42:56.732" level="INFO">Total number of countries in Json data 250 and in API 250 count are matching</msg>
+<msg timestamp="20231121 16:42:56.732" level="INFO">${result} = True</msg>
+<status status="PASS" starttime="20231121 16:42:52.856" endtime="20231121 16:42:56.732"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${result}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20231121 16:42:56.734" endtime="20231121 16:42:56.735"/>
+</kw>
+<doc>Verify if compare_common_name_count_with_json returns True</doc>
+<status status="PASS" starttime="20231121 16:42:52.856" endtime="20231121 16:42:56.736"/>
+</test>
+<test id="s1-t2" name="Check Compare with regions" line="11">
+<kw name="Compare With Regions" library="RestCountriesDataDriver">
+<var>${a}</var>
+<arg>Asia</arg>
+<msg timestamp="20231121 16:42:59.011" level="INFO">Country names of Asia are matching in API ['Pakistan', 'Kazakhstan', 'Hong Kong', 'United Arab Emirates', 'Azerbaijan', 'South Korea', 'Laos', 'Lebanon', 'Macau', 'Kuwait', 'Oman', 'Bhutan', 'Bahrain', 'Mongolia', 'China', 'Jordan', 'Cambodia', 'Thailand', 'Turkmenistan', 'Maldives', 'Philippines', 'Timor-Leste', 'Japan', 'Georgia', 'Syria', 'Bangladesh', 'Vietnam', 'Sri Lanka', 'Taiwan', 'Tajikistan', 'Armenia', 'Afghanistan', 'Kyrgyzstan', 'Qatar', 'Yemen', 'Brunei', 'Uzbekistan', 'Iran', 'Israel', 'North Korea', 'Turkey', 'Iraq', 'Singapore', 'Myanmar', 'Nepal', 'India', 'Malaysia', 'Indonesia', 'Saudi Arabia', 'Palestine'] and JSON ['Pakistan', 'Kazakhstan', 'Hong Kong', 'United Arab Emirates', 'Azerbaijan', 'South Korea', 'Laos', 'Lebanon', 'Macau', 'Kuwait', 'Oman', 'Bhutan', 'Bahrain', 'Mongolia', 'China', 'Jordan', 'Cambodia', 'Thailand', 'Turkmenistan', 'Maldives', 'Philippines', 'Timor-Leste', 'Japan', 'Georgia', 'Syria', 'Bangladesh', 'Vietnam', 'Sri Lanka', 'Taiwan', 'Tajikistan', 'Armenia', 'Afghanistan', 'Kyrgyzstan', 'Qatar', 'Yemen', 'Brunei', 'Uzbekistan', 'Iran', 'Israel', 'North Korea', 'Turkey', 'Iraq', 'Singapore', 'Myanmar', 'Nepal', 'India', 'Malaysia', 'Indonesia', 'Saudi Arabia', 'Palestine']</msg>
+<msg timestamp="20231121 16:42:59.012" level="INFO">${a} = True</msg>
+<status status="PASS" starttime="20231121 16:42:56.739" endtime="20231121 16:42:59.012"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${a}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20231121 16:42:59.013" endtime="20231121 16:42:59.014"/>
+</kw>
+<kw name="Compare With Regions" library="RestCountriesDataDriver">
+<var>${b}</var>
+<arg>Oceania</arg>
+<msg timestamp="20231121 16:43:01.437" level="INFO">Country names of Oceania are matching in API ['American Samoa', 'Christmas Island', 'Samoa', 'Cook Islands', 'Kiribati', 'Fiji', 'Pitcairn Islands', 'Tonga', 'Papua New Guinea', 'Cocos (Keeling) Islands', 'Guam', 'Palau', 'French Polynesia', 'Marshall Islands', 'Australia', 'Micronesia', 'Norfolk Island', 'Solomon Islands', 'Tuvalu', 'New Caledonia', 'Tokelau', 'Nauru', 'Wallis and Futuna', 'Northern Mariana Islands', 'Niue', 'New Zealand', 'Vanuatu'] and JSON ['American Samoa', 'Christmas Island', 'Samoa', 'Cook Islands', 'Kiribati', 'Fiji', 'Pitcairn Islands', 'Tonga', 'Papua New Guinea', 'Cocos (Keeling) Islands', 'Guam', 'Palau', 'French Polynesia', 'Marshall Islands', 'Australia', 'Micronesia', 'Norfolk Island', 'Solomon Islands', 'Tuvalu', 'New Caledonia', 'Tokelau', 'Nauru', 'Wallis and Futuna', 'Northern Mariana Islands', 'Niue', 'New Zealand', 'Vanuatu']</msg>
+<msg timestamp="20231121 16:43:01.437" level="INFO">${b} = True</msg>
+<status status="PASS" starttime="20231121 16:42:59.015" endtime="20231121 16:43:01.437"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${b}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20231121 16:43:01.445" endtime="20231121 16:43:01.445"/>
+</kw>
+<doc>Verify if compare_with_regions</doc>
+<status status="PASS" starttime="20231121 16:42:56.738" endtime="20231121 16:43:01.445"/>
+</test>
+<test id="s1-t3" name="Check Compare with subregions" line="18">
+<kw name="Compare With Subregions" library="RestCountriesDataDriver">
+<var>${a}</var>
+<arg>Central America</arg>
+<msg timestamp="20231121 16:43:02.531" level="INFO">Country names of Central America are matching in API ['Panama', 'Belize', 'Nicaragua', 'Costa Rica', 'Honduras', 'El Salvador', 'Guatemala'] and JSON ['Panama', 'Belize', 'Nicaragua', 'Costa Rica', 'Honduras', 'El Salvador', 'Guatemala']</msg>
+<msg timestamp="20231121 16:43:02.532" level="INFO">${a} = True</msg>
+<status status="PASS" starttime="20231121 16:43:01.445" endtime="20231121 16:43:02.533"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${a}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20231121 16:43:02.535" endtime="20231121 16:43:02.536"/>
+</kw>
+<kw name="Compare With Subregions" library="RestCountriesDataDriver">
+<var>${b}</var>
+<arg>Micronesia</arg>
+<msg timestamp="20231121 16:43:04.026" level="INFO">Country names of Micronesia are matching in API ['Marshall Islands', 'Northern Mariana Islands', 'Micronesia', 'Guam', 'Palau', 'Kiribati', 'Nauru'] and JSON ['Marshall Islands', 'Northern Mariana Islands', 'Micronesia', 'Guam', 'Palau', 'Kiribati', 'Nauru']</msg>
+<msg timestamp="20231121 16:43:04.030" level="INFO">${b} = True</msg>
+<status status="PASS" starttime="20231121 16:43:02.537" endtime="20231121 16:43:04.030"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${b}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20231121 16:43:04.031" endtime="20231121 16:43:04.031"/>
+</kw>
+<doc>Verify if compare_with_subregions</doc>
+<status status="PASS" starttime="20231121 16:43:01.445" endtime="20231121 16:43:04.032"/>
+</test>
+<test id="s1-t4" name="Check Compare Unique regions" line="25">
+<kw name="Compare Unique Regions" library="RestCountriesDataDriver">
+<var>${result}</var>
+<msg timestamp="20231121 16:43:04.838" level="INFO">{'region': ['Africa', 'Americas', 'Antarctic', 'Asia', 'Europe', 'Oceania']}
+Unique names of the regions are matching with the API {'region': ['Africa', 'Americas', 'Antarctic', 'Asia', 'Europe', 'Oceania']} and JSON data {'region': ['Africa', 'Americas', 'Antarctic', 'Asia', 'Europe', 'Oceania']}</msg>
+<msg timestamp="20231121 16:43:04.843" level="INFO">${result} = True</msg>
+<status status="PASS" starttime="20231121 16:43:04.034" endtime="20231121 16:43:04.843"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${result}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20231121 16:43:04.845" endtime="20231121 16:43:04.846"/>
+</kw>
+<doc>Verify if compare_unique_regions</doc>
+<status status="PASS" starttime="20231121 16:43:04.033" endtime="20231121 16:43:04.846"/>
+</test>
+<test id="s1-t5" name="Check Compare Unique subregions" line="30">
+<kw name="Compare Unique Subregions" library="RestCountriesDataDriver">
+<var>${result}</var>
+<msg timestamp="20231121 16:43:06.022" level="INFO">Unique names of the subregions are matching with the API {'subregion': ['Australia and New Zealand', 'Caribbean', 'Central America', 'Central Asia', 'Central Europe', 'Eastern Africa', 'Eastern Asia', 'Eastern Europe', 'Melanesia', 'Micronesia', 'Middle Africa', 'North America', 'Northern Africa', 'Northern Europe', 'Polynesia', 'South America', 'South-Eastern Asia', 'Southeast Europe', 'Southern Africa', 'Southern Asia', 'Southern Europe', 'Western Africa', 'Western Asia', 'Western Europe']} and JSON data {'subregion': ['Australia and New Zealand', 'Caribbean', 'Central America', 'Central Asia', 'Central Europe', 'Eastern Africa', 'Eastern Asia', 'Eastern Europe', 'Melanesia', 'Micronesia', 'Middle Africa', 'North America', 'Northern Africa', 'Northern Europe', 'Polynesia', 'South America', 'South-Eastern Asia', 'Southeast Europe', 'Southern Africa', 'Southern Asia', 'Southern Europe', 'Western Africa', 'Western Asia', 'Western Europe']}</msg>
+<msg timestamp="20231121 16:43:06.023" level="INFO">${result} = True</msg>
+<status status="PASS" starttime="20231121 16:43:04.846" endtime="20231121 16:43:06.023"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${result}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20231121 16:43:06.028" endtime="20231121 16:43:06.029"/>
+</kw>
+<doc>Verify if compare_unique_subregions</doc>
+<status status="PASS" starttime="20231121 16:43:04.846" endtime="20231121 16:43:06.033"/>
+</test>
+<test id="s1-t6" name="Check Compare common name country" line="35">
+<kw name="Compare Common Name Country" library="RestCountriesDataDriver">
+<var>${a}</var>
+<arg>Palestine</arg>
+<msg timestamp="20231121 16:43:07.275" level="INFO">Capitals of Palestine are matching with the API ['Ramallah', 'Jerusalem'] and JSON data ['Ramallah', 'Jerusalem']</msg>
+<msg timestamp="20231121 16:43:07.275" level="INFO">${a} = True</msg>
+<status status="PASS" starttime="20231121 16:43:06.043" endtime="20231121 16:43:07.275"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${a}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20231121 16:43:07.290" endtime="20231121 16:43:07.290"/>
+</kw>
+<kw name="Compare Common Name Country" library="RestCountriesDataDriver">
+<var>${b}</var>
+<arg>North Macedoni</arg>
+<msg timestamp="20231121 16:43:07.998" level="INFO">Capitals of North Macedoni are matching with the API ['Skopje'] and JSON data ['Skopje']</msg>
+<msg timestamp="20231121 16:43:07.998" level="INFO">${b} = True</msg>
+<status status="PASS" starttime="20231121 16:43:07.290" endtime="20231121 16:43:07.998"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${b}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20231121 16:43:08.000" endtime="20231121 16:43:08.001"/>
+</kw>
+<kw name="Compare Common Name Country" library="RestCountriesDataDriver">
+<var>${c}</var>
+<arg>Lebanon</arg>
+<msg timestamp="20231121 16:43:09.057" level="INFO">Capitals of Lebanon are matching with the API ['Beirut'] and JSON data ['Beirut']</msg>
+<msg timestamp="20231121 16:43:09.057" level="INFO">${c} = True</msg>
+<status status="PASS" starttime="20231121 16:43:08.001" endtime="20231121 16:43:09.057"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${c}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20231121 16:43:09.057" endtime="20231121 16:43:09.057"/>
+</kw>
+<doc>Verify if compare_common_name_country</doc>
+<status status="PASS" starttime="20231121 16:43:06.043" endtime="20231121 16:43:09.057"/>
+</test>
+<status status="PASS" starttime="20231121 16:42:52.387" endtime="20231121 16:43:09.064"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="6" fail="0" skip="0" id="s1" name="Restcountry">Restcountry</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

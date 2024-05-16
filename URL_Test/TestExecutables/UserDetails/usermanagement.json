@@ -1,0 +1,29 @@
+{
+    "Total Number of Users": 12,
+
+    "Details based on UserID":
+    {
+        
+        "4": {"data":{"id":4,"email":"eve.holt@reqres.in","first_name":"Eve","last_name":"Holt","avatar":"https://reqres.in/img/faces/4-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}},
+        
+        "12": {"data":{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+        
+    },
+
+    "Details based on Email": 
+    {
+        "charles.morris@reqres.in": {"id": 5, "first_name": "Charles", "last_name": "Morris"},
+
+        "george.edwards@reqres.in": {"id": 11, "first_name": "George", "last_name": "Edwards"}
+    
+    },
+
+    "Check details of Created User":
+        
+        {"name": "Chethana","job": "Project Engineer", "id": "732", "createdAt": "2023-10-05T12:02:33.120Z"},
+
+    "Check details of Updated User":
+        
+        {"name": "Chowdry", "job": "Software Engineer", "updatedAt": "2023-10-06T05:39:55.351Z"}
+    
+}
